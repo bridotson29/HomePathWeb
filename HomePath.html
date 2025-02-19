@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePath</title>
+    <style>
+      body {
+        background-image: url("https://media.npr.org/assets/img/2023/09/29/gettyimages-1486049233_wide-3728a037d629dc221128598a3357c2cd0f4c71ec.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      li:hover {
+        background: none;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 1px 1px;
+        border-radius: 10px;
+        margin: 0 auto;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+        margin: 5px 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        text-align: center;
+        line-height: normal;
+        border: 1px solid #007aff;
+        background: #f4f8fc;
+        color: #007aff;
+      }
+      .padded {
+        padding: 10px;
+      }
+      button.selected {
+        background-color: #007aff;
+        color: #f4f8fc;
+        font-weight: medium;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      button:hover {
+        color: white;
+        border: 1px solid #007aff;
+      }
+      h4 {
+        text-align: center;
+        color: #636363;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 450;
+      }
+      .custom-button:hover {
+        background-color: #007aff;
+      }
+      .custom-button {
+        display: flex;
+        justify-content: center;
+        padding: 6px 4px;
+        font-size: 14px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        max-width: 200px;
+        margin: 0 auto;
+        line-height: 2;
+        text-decoration: none;
+        background-color: #007aff;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        text-decoration: none;
+        color: white;
+      }
+      fieldset {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: none;
+      }
+      .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #1a64d6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+      .circle i {
+        color: white;
+        font-size: 14px;
+      }
+      button img {
+        margin-right: 10px; /* Space between image and text */
+        width: 40px; /* Adjust the size as needed */
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br />
+    <fieldset>
+      <div>
+        <h4>What do you prefer?</h4>
+        <ul>
+          <li>
+            <button onclick="toggleSelected(this)">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/18894/18894345.png"
+                alt="icon"
+              />
+              Home
+            </button>
+          </li>
+          <li>
+            <button onclick="toggleSelected(this)">Button 2</button>
+          </li>
+          <li>
+            <button onclick="toggleSelected(this)">Button 3</button>
+          </li>
+        </ul>
+      </div>
+      <button class="custom-button">
+        <a href="https://copilot.microsoft.com/chats/isZRSM8fKThrN7wdJeLQm"
+          >Next</a
+        >
+      </button>
+    </fieldset>
+    <script>
+      function toggleSelected(button) {
+        button.classList.toggle("selected");
+      }
+    </script>
+  </body>
+</html>
