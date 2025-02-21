@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePath</title>
+    <style>
+      body {
+        margin: 40px 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        background-color: none;
+        color: #1a64d6;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+      }
+      .logo {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      nav ul li {
+        display: inline;
+        align-items: center;
+      }
+      nav ul li a {
+        color: #1a64d6;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background-color 200ms ease-in-out;
+      }
+      nav ul li a:hover {
+        background-color: none;
+        border-radius: 1px;
+      }
+      .login {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        margin: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        text-align: center;
+        line-height: normal;
+        background: #1a64d6;
+        color: #f4f8fc;
+      }
+      hr {
+        border-top: 1px solid #b5b5b5;
+      }
+
+      h3 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #202020;
+      }
+      h5 {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        color: #202020;
+      }
+      fieldset {
+        width: 70px;
+        margin: 10px auto;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #ffff;
+        border-color: #b5b5b5;
+        border-width: 1px;
+        display: inline-block;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+      }
+
+      li {
+        margin-right: 10px;
+        display: inline-block;
+      }
+      img {
+        width: 400px;
+        border-radius: 5px;
+      }
+      .housedetails
+      {
+        width: 24px;
+        float: left;
+        margin-right: 10px;
+      }
+      .custom-button {
+      display: center;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 50px;
+      font-size: 14px;
+      margin: 0px;
+      border-radius: 5px; 
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      text-align: center;
+      text-decoration: none;
+      background-color: #1a64d6;
+      color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">HomePath</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="login">Login</button><a href="#login"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <h3>Your Dream Home</h3>
+    <h5>
+      Great, thanks for the input! Based on your requirements,
+      <b>here are some suggested homes we can offer you.</b>
+    </h5>
+    <h5><b>35</b> Dream Homes Available</h5>
+    <ul>
+      <li>
+        <fieldset>
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/396/original/Screenshot_2025-02-21_at_11.15.00%E2%80%AFAM.png?1740165377"
+            alt="icon"
+          />
+          <p><b>123 Arizona Street</b></p>
+          <p>Beach access - South Beachfront </p>
+          <p><b>(123) 456 - 7890  </b></p>
+          <hr>
+          <br>
+          <div>
+            <img class ="housedetails"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/126/original/house.png?1739937761"
+            alt="icon"
+          /> <b>House Details</b>
+          <br> Bedrooms, 2 Bathrooms, 1 Car Garage
+          </div>
+          <br>
+          <div>
+            <img class ="housedetails"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/397/original/desk-bell.png?1740168347"
+            alt="icon"
+          /> <b>Amenities</b> 
+          <br> In unit laundry, Patio/Balcony/ Dishwasher, Pet-friendly
+          </div>
+          <br><br>
+          <div class="button-container">
+            <button class="custom-button">
+              Select
+              </button>
+        </fieldset>
+      </li>
+      <li>
+        <fieldset>
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/396/original/Screenshot_2025-02-21_at_11.15.00%E2%80%AFAM.png?1740165377"
+            alt="icon"
+          />
+          <p><b>123 Arizona Street</b></p>
+          <p>Beach access - South Beachfront </p>
+          <p><b>(123) 456 - 7890  </b></p>
+          <hr>
+          <br>
+          <div>
+            <img class ="housedetails"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/126/original/house.png?1739937761"
+            alt="icon"
+          /> <b>House Details</b>
+          <br> Bedrooms, 2 Bathrooms, 1 Car Garage
+          </div>
+          <br>
+          <div>
+            <img class ="housedetails"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/397/original/desk-bell.png?1740168347"
+            alt="icon"
+          /> <b>Amenities</b> 
+          <br> In unit laundry, Patio/Balcony/ Dishwasher, Pet-friendly
+          </div>
+          <br><br>
+          <div class="button-container">
+            <button class="custom-button">
+              Select
+              </button>
+        </fieldset>
+      </li>
+      <li>
+        <fieldset>
+          <div>
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/396/original/Screenshot_2025-02-21_at_11.15.00%E2%80%AFAM.png?1740165377"
+            alt="icon"
+          />
+          <p><b>123 Arizona Street</b></p>
+          <p>Beach access - South Beachfront </p>
+          <p><b>(123) 456 - 7890  </b></p>
+          <hr>
+          <br>
+          <div>
+            <img class ="housedetails"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/126/original/house.png?1739937761"
+            alt="icon"
+          /> <b>House Details</b>
+          <br> Bedrooms, 2 Bathrooms, 1 Car Garage
+          </div>
+          <br>
+          <div>
+            <img class ="housedetails"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/397/original/desk-bell.png?1740168347"
+            alt="icon"
+          /> <b>Amenities</b> 
+          <br> In unit laundry, Patio/Balcony/ Dishwasher, Pet-friendly
+          </div>
+          <br><br>
+          <div class="button-container">
+            <button class="custom-button">
+              Select
+              </button>
+        </fieldset>
+      </li>
+    </ul>
+   <!--  repeated code-->
+    <ul>
+        <li>
+          <fieldset>
+            <div>
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/396/original/Screenshot_2025-02-21_at_11.15.00%E2%80%AFAM.png?1740165377"
+              alt="icon"
+            />
+            <p><b>123 Arizona Street</b></p>
+            <p>Beach access - South Beachfront </p>
+            <p><b>(123) 456 - 7890  </b></p>
+            <hr>
+            <br>
+            <div>
+              <img class ="housedetails"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/126/original/house.png?1739937761"
+              alt="icon"
+            /> <b>House Details</b>
+            <br> Bedrooms, 2 Bathrooms, 1 Car Garage
+            </div>
+            <br>
+            <div>
+              <img class ="housedetails"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/397/original/desk-bell.png?1740168347"
+              alt="icon"
+            /> <b>Amenities</b> 
+            <br> In unit laundry, Patio/Balcony/ Dishwasher, Pet-friendly
+            </div>
+            <br><br>
+            <div class="button-container">
+              <button class="custom-button">
+                Select
+                </button>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <div>
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/396/original/Screenshot_2025-02-21_at_11.15.00%E2%80%AFAM.png?1740165377"
+              alt="icon"
+            />
+            <p><b>123 Arizona Street</b></p>
+            <p>Beach access - South Beachfront </p>
+            <p><b>(123) 456 - 7890  </b></p>
+            <hr>
+            <br>
+            <div>
+              <img class ="housedetails"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/126/original/house.png?1739937761"
+              alt="icon"
+            /> <b>House Details</b>
+            <br> Bedrooms, 2 Bathrooms, 1 Car Garage
+            </div>
+            <br>
+            <div>
+              <img class ="housedetails"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/397/original/desk-bell.png?1740168347"
+              alt="icon"
+            /> <b>Amenities</b> 
+            <br> In unit laundry, Patio/Balcony/ Dishwasher, Pet-friendly
+            </div>
+            <br><br>
+            <div class="button-container">
+              <button class="custom-button">
+                Select
+                </button>
+          </fieldset>
+        </li>
+        <li>
+          <fieldset>
+            <div>
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/396/original/Screenshot_2025-02-21_at_11.15.00%E2%80%AFAM.png?1740165377"
+              alt="icon"
+            />
+            <p><b>123 Arizona Street</b></p>
+            <p>Beach access - South Beachfront </p>
+            <p><b>(123) 456 - 7890  </b></p>
+            <hr>
+            <br>
+            <div>
+              <img class ="housedetails"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/126/original/house.png?1739937761"
+              alt="icon"
+            /> <b>House Details</b>
+            <br> Bedrooms, 2 Bathrooms, 1 Car Garage
+            </div>
+            <br>
+            <div>
+              <img class ="housedetails"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/158/397/original/desk-bell.png?1740168347"
+              alt="icon"
+            /> <b>Amenities</b> 
+            <br> In unit laundry, Patio/Balcony/ Dishwasher, Pet-friendly
+            </div>
+            <br><br>
+            <div class="button-container">
+              <button class="custom-button">
+                Select
+                </button>
+          </fieldset>
+        </li>
+      </ul>
+  </body>
+</html>
